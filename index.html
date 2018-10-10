@@ -2,7 +2,7 @@
 <html lang="ru-RU">
   <head>
     <meta charset="utf-8">
-    <title>Главная страница</title><!--[if IE]>
+    <title>Tanuki Game</title><!--[if IE]>
     <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="keywords" content="">
@@ -10,8 +10,9 @@
     <link rel="apple-touch-icon" sizes="180x180" href="static/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="static/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="static/favicon/favicon-16x16.png">
-    <link rel="manifest" href="static/favicon/manifest.json">
+    <link rel="manifest" href="static/favicon/site.webmanifest">
     <link rel="mask-icon" href="static/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <!-- CSS-->
     <link rel="stylesheet" type="text/css" href="static/css/main.css"><!--[if lt IE 9]>
@@ -19,39 +20,732 @@
   </head>
   <body class="index-page">
     <div class="wrapper">
-      <header>
+      <header><img class="header_circles" src="static/img/general/circles.png" alt="circles">
         <div class="container">
           <div class="header">
-            <div class="header__logo"><a class="logotype" href="#">
-                <svg class="icon icon-vk ">
-                  <use xlink:href="static/img/svg/symbol/sprite.svg#vk"></use>
-                </svg>
-                <svg class="icon icon-vk ">
-                  <use xlink:href="static/img/svg/symbol/sprite.svg#vk"></use>
-                </svg></a></div>
-            <div class="header__menu">
-              <ul class="nav">
-                <li class="nav__item"><a class="nav__link" href="main.html">Главная страница</a></li>
-                <li class="nav__item"><a class="nav__link" href="about.html">О компании</a></li>
-                <li class="nav__item"><a class="nav__link" href="catalog.html">Каталог</a></li>
-                <li class="nav__item"><a class="nav__link" href="contacts.html">Контакты</a></li>
-              </ul>
+            <div class="header_answer">
+              <h1 class="header_answer__title">Три вопроса</h1>
+              <p class="header_answer__sub">- море подарков!</p>
+              <svg class="icon icon-logo header_answer__logo">
+                <use xlink:href="static/img/svg/symbol/sprite.svg#logo"></use>
+              </svg><img class="header_answer__img" src="static/img/general/sake.png" alt="sake">
+            </div>
+            <div class="header_article">
+              <p class="header_article__this">Отвечайте на вопросы и получайте гарантированные подарки</p>
             </div>
           </div>
         </div>
       </header>
       <div class="content">
-        <!--include ../modules/slider-->
-      </div>
-      <footer></footer>
-      <div class="menu_wrap">
-        <ul class="menuGlobal">
-          <li class="menuGlobal__item"><a class="menuGlobal__link" href="index.html">1. Index</a></li>
-        </ul>
-        <div class="menu_click">
-          <button>N</button>
+        <div class="state">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="enter_wrap">
+                  <div class="container">
+                    <div class="enter">
+                      <div class="btn_global_wrap">
+                        <button class="btn_global">Начать</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="main_fix start_wrap tort">
+                  <div class="container">
+                    <div class="start fix">
+                      <p class="start__article">
+                        Мы дарим подарки всем,
+                        кто ответил на вопросы и поделился с друзьями.
+                        Вы получите гарантированные подарки
+                        и возможность выиграть супер-призы!
+                      </p>
+                      <h2 class="start__title">Получите подарки за 3 шага!</h2>
+                      <ul class="start_list">
+                        <li class="start_list__item">
+                          <div class="start_list__row">
+                            <div class="start_list__wrap">
+                              <svg class="icon icon-s-1 start_list__svg">
+                                <use xlink:href="static/img/svg/symbol/sprite.svg#s-1"></use>
+                              </svg>
+                            </div>
+                            <p class="start_list__info">Укажите имя, телефон и почту</p>
+                          </div>
+                        </li>
+                        <li class="start_list__item">
+                          <div class="start_list__row">
+                            <div class="start_list__wrap">
+                              <svg class="icon icon-s-2 start_list__svg">
+                                <use xlink:href="static/img/svg/symbol/sprite.svg#s-2"></use>
+                              </svg>
+                            </div>
+                            <p class="start_list__info">Ответьте на 3 простых вопроса</p>
+                          </div>
+                        </li>
+                        <li class="start_list__item">
+                          <div class="start_list__row">
+                            <div class="start_list__wrap">
+                              <svg class="icon icon-s-3 start_list__svg">
+                                <use xlink:href="static/img/svg/symbol/sprite.svg#s-3"></use>
+                              </svg>
+                            </div>
+                            <p class="start_list__info">Поделитесь результатами с друзьями в соц. сетях</p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="container">
+                    <div class="btn_global_wrap">
+                      <button class="btn_global">Ну что, начнем?</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="main_fix answer_wrap tort">
+                  <div class="container">
+                    <form class="form_global">
+                      <ul class="start_list">
+                        <li class="start_list__item">
+                          <div class="start_list__row">
+                            <div class="start_list__wrap">
+                              <svg class="icon icon-s-1 start_list__svg">
+                                <use xlink:href="static/img/svg/symbol/sprite.svg#s-1"></use>
+                              </svg>
+                            </div>
+                            <p class="start_list__info">Укажите имя, телефон и почту</p>
+                          </div>
+                          <ul class="form_answer">
+                            <li class="form_answer__row">
+                              <input class="form_answer__input" type="text" name="name"><span class="form_answer__label">Имя</span>
+                            </li>
+                            <li class="form_answer__row blocked">
+                              <input class="form_answer__input" type="email" name="email" readonly><span class="form_answer__label">Почта</span>
+                            </li>
+                            <li class="form_answer__row blocked">
+                              <input class="form_answer__input" type="tel" name="phone" readonly><span class="form_answer__label">Телефон</span>
+                            </li>
+                          </ul>
+                        </li>
+                        <div class="form_answer_btn">
+                          <button class="btn_global btn_disabled" disabled>Продолжить</button>
+                        </div>
+                        <li class="start_list__item list_disabled">
+                          <div class="start_list__row">
+                            <div class="start_list__wrap">
+                              <svg class="icon icon-s-2 start_list__svg">
+                                <use xlink:href="static/img/svg/symbol/sprite.svg#s-2"></use>
+                              </svg>
+                            </div>
+                            <p class="start_list__info">Ответьте на 3 простых вопроса</p>
+                          </div>
+                        </li>
+                        <li class="start_list__item list_disabled">
+                          <div class="start_list__row">
+                            <div class="start_list__wrap">
+                              <svg class="icon icon-s-3 start_list__svg">
+                                <use xlink:href="static/img/svg/symbol/sprite.svg#s-3"></use>
+                              </svg>
+                            </div>
+                            <p class="start_list__info">Поделитесь результатами с друзьями в соц. сетях</p>
+                          </div>
+                        </li>
+                      </ul>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="main_fix answer_wrap tort">
+                  <div class="container">
+                    <form class="form_global">
+                      <ul class="start_list">
+                        <li class="start_list__item">
+                          <div class="start_list__row">
+                            <div class="start_list__wrap">
+                              <svg class="icon icon-s-1 start_list__svg">
+                                <use xlink:href="static/img/svg/symbol/sprite.svg#s-1"></use>
+                              </svg>
+                            </div>
+                            <p class="start_list__info">Укажите имя, телефон и почту</p>
+                          </div>
+                          <ul class="form_answer">
+                            <li class="form_answer__row">
+                              <input class="form_answer__input" type="text" name="name" value="Ozzie"><span class="form_answer__label">Имя</span>
+                            </li>
+                            <li class="form_answer__row">
+                              <input class="form_answer__input" type="email" name="email" value="test@gmail.com"><span class="form_answer__label">Почта</span>
+                            </li>
+                            <li class="form_answer__row">
+                              <input class="form_answer__input" type="tel" name="phone" value="+7 905 834-71-45"><span class="form_answer__label">Телефон</span>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="form_answer_btn">
+                          <button class="btn_global">Продолжить</button>
+                        </li>
+                        <li class="start_list__item list_disabled">
+                          <div class="start_list__row">
+                            <div class="start_list__wrap">
+                              <svg class="icon icon-s-2 start_list__svg">
+                                <use xlink:href="static/img/svg/symbol/sprite.svg#s-2"></use>
+                              </svg>
+                            </div>
+                            <p class="start_list__info">Ответьте на 3 простых вопроса</p>
+                          </div>
+                        </li>
+                        <li class="start_list__item list_disabled">
+                          <div class="start_list__row">
+                            <div class="start_list__wrap">
+                              <svg class="icon icon-s-3 start_list__svg">
+                                <use xlink:href="static/img/svg/symbol/sprite.svg#s-3"></use>
+                              </svg>
+                            </div>
+                            <p class="start_list__info">Поделитесь результатами с друзьями в соц. сетях</p>
+                          </div>
+                        </li>
+                      </ul>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="main_fix answer_wrap tort">
+                  <div class="container">
+                    <form class="form_global">
+                      <ul class="start_list">
+                        <li class="start_list__item">
+                          <div class="start_list__row">
+                            <div class="start_list__wrap">
+                              <svg class="icon icon-s-1 start_list__svg">
+                                <use xlink:href="static/img/svg/symbol/sprite.svg#s-1"></use>
+                              </svg>
+                            </div>
+                            <p class="start_list__info">Укажите имя, телефон и почту</p>
+                          </div>
+                          <div class="form_answer">
+                            <div class="form_answer__row">
+                              <input class="form_answer__input" type="text" name="name" value="Ozzie"><span class="form_answer__label">Имя</span>
+                            </div>
+                            <div class="form_answer__row">
+                              <input class="form_answer__input" type="email" name="email" value="test@gmail.com"><span class="form_answer__label">Почта</span>
+                            </div>
+                            <div class="form_answer__row">
+                              <input class="form_answer__input" type="tel" name="phone" value="+7 905 834-71-45"><span class="form_answer__label">Телефон</span>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="form_answer_btn" hidden>
+                          <button class="btn_global">Продолжить</button>
+                        </li>
+                        <li class="start_list__item pt">
+                          <div class="start_list__row">
+                            <div class="start_list__wrap">
+                              <svg class="icon icon-s-2 start_list__svg">
+                                <use xlink:href="static/img/svg/symbol/sprite.svg#s-2"></use>
+                              </svg>
+                            </div>
+                            <p class="start_list__info">Ответьте на 3 простых вопроса</p>
+                          </div>
+                          <ul class="form_answer radio__container">
+                            <li class="form_answer__rowRadio">
+                              <h3 class="form_answer__title">1. Как часто вы заказываете доставку в  «Тануки»?</h3>
+                              <div class="radio_row">
+                                <div class="radio-inline">
+                                  <input class="radio" id="awesome-item-1" name="radio" type="radio" value="AwesomeItem1">
+                                  <label class="radio__label" for="awesome-item-1">Несколько раз в неделю</label>
+                                </div>
+                                <div class="radio-inline">
+                                  <input class="radio" id="awesome-item-2" name="radio" type="radio" value="AwesomeItem2">
+                                  <label class="radio__label" for="awesome-item-2">Раз в неделю</label>
+                                </div>
+                                <div class="radio-inline">
+                                  <input class="radio" id="awesome-item-3" name="radio" type="radio" value="AwesomeItem3">
+                                  <label class="radio__label" for="awesome-item-3">Реже раза в неделю</label>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="form_answer__rowRadio">
+                              <h3 class="form_answer__title">2. Пробовали ли вы новое сезонное меню ?</h3>
+                              <div class="radio_row">
+                                <div class="radio-inline">
+                                  <input class="radio" id="awesome-item-4" name="radio1" type="radio" value="AwesomeItem1">
+                                  <label class="radio__label" for="awesome-item-4">Да</label>
+                                </div>
+                                <div class="radio-inline">
+                                  <input class="radio" id="awesome-item-5" name="radio1" type="radio" value="AwesomeItem2">
+                                  <label class="radio__label" for="awesome-item-5">Нет</label>
+                                </div>
+                                <div class="radio-inline">
+                                  <input class="radio" id="awesome-item-6" name="radio1" type="radio" value="AwesomeItem3">
+                                  <label class="radio__label" for="awesome-item-6">Планирую</label>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="form_answer__rowRadio">
+                              <h3 class="form_answer__title">3. Как часто вы посещаете рестораны «Тануки»?</h3>
+                              <div class="radio_row">
+                                <div class="radio-inline">
+                                  <input class="radio" id="awesome-item-7" name="radio2" type="radio" value="AwesomeItem1">
+                                  <label class="radio__label" for="awesome-item-7">Несколько раз в неделю</label>
+                                </div>
+                                <div class="radio-inline">
+                                  <input class="radio" id="awesome-item-8" name="radio2" type="radio" value="AwesomeItem2">
+                                  <label class="radio__label" for="awesome-item-8">Раз в неделю</label>
+                                </div>
+                                <div class="radio-inline">
+                                  <input class="radio" id="awesome-item-9" name="radio2" type="radio" value="AwesomeItem3">
+                                  <label class="radio__label" for="awesome-item-9">Реже раза в неделю</label>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="form_answer_btn">
+                          <button class="btn_global btn_disabled" disabled>Продолжить</button>
+                        </li>
+                        <li class="start_list__item list_disabled">
+                          <div class="start_list__row">
+                            <div class="start_list__wrap">
+                              <svg class="icon icon-s-3 start_list__svg">
+                                <use xlink:href="static/img/svg/symbol/sprite.svg#s-3"></use>
+                              </svg>
+                            </div>
+                            <p class="start_list__info">Поделитесь результатами с друзьями в соц. сетях</p>
+                          </div>
+                        </li>
+                      </ul>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="main_fix answer_wrap tort">
+                  <div class="container">
+                    <form class="form_global">
+                      <ul class="start_list">
+                        <li class="start_list__item">
+                          <div class="start_list__row">
+                            <div class="start_list__wrap">
+                              <svg class="icon icon-s-1 start_list__svg">
+                                <use xlink:href="static/img/svg/symbol/sprite.svg#s-1"></use>
+                              </svg>
+                            </div>
+                            <p class="start_list__info">Укажите имя, телефон и почту</p>
+                          </div>
+                          <div class="form_answer">
+                            <div class="form_answer__row">
+                              <input class="form_answer__input" type="text" name="name" value="Ozzie"><span class="form_answer__label">Имя</span>
+                            </div>
+                            <div class="form_answer__row">
+                              <input class="form_answer__input" type="email" name="email" value="test@gmail.com"><span class="form_answer__label">Почта</span>
+                            </div>
+                            <div class="form_answer__row">
+                              <input class="form_answer__input" type="tel" name="phone" value="+7 905 834-71-45"><span class="form_answer__label">Телефон</span>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="form_answer_btn" hidden>
+                          <button class="btn_global">Продолжить</button>
+                        </li>
+                        <li class="start_list__item pt">
+                          <div class="start_list__row">
+                            <div class="start_list__wrap">
+                              <svg class="icon icon-s-2 start_list__svg">
+                                <use xlink:href="static/img/svg/symbol/sprite.svg#s-2"></use>
+                              </svg>
+                            </div>
+                            <p class="start_list__info">Ответьте на 3 простых вопроса</p>
+                          </div>
+                          <ul class="form_answer radio__container">
+                            <li class="form_answer__rowRadio">
+                              <h3 class="form_answer__title">1. Как часто вы заказываете доставку в  «Тануки»?</h3>
+                              <div class="radio_row">
+                                <div class="radio-inline">
+                                  <input class="radio" id="awesome-item-1" name="radio" type="radio" value="AwesomeItem1" checked="true">
+                                  <label class="radio__label" for="awesome-item-1">Несколько раз в неделю</label>
+                                </div>
+                                <div class="radio-inline">
+                                  <input class="radio" id="awesome-item-2" name="radio" type="radio" value="AwesomeItem2">
+                                  <label class="radio__label" for="awesome-item-2">Раз в неделю</label>
+                                </div>
+                                <div class="radio-inline">
+                                  <input class="radio" id="awesome-item-3" name="radio" type="radio" value="AwesomeItem3">
+                                  <label class="radio__label" for="awesome-item-3">Реже раза в неделю</label>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="form_answer__rowRadio">
+                              <h3 class="form_answer__title">2. Пробовали ли вы новое сезонное меню ?</h3>
+                              <div class="radio_row">
+                                <div class="radio-inline">
+                                  <input class="radio" id="awesome-item-4" name="radio1" type="radio" value="AwesomeItem1" checked="true">
+                                  <label class="radio__label" for="awesome-item-4">Да</label>
+                                </div>
+                                <div class="radio-inline">
+                                  <input class="radio" id="awesome-item-5" name="radio1" type="radio" value="AwesomeItem2">
+                                  <label class="radio__label" for="awesome-item-5">Нет</label>
+                                </div>
+                                <div class="radio-inline">
+                                  <input class="radio" id="awesome-item-6" name="radio1" type="radio" value="AwesomeItem3">
+                                  <label class="radio__label" for="awesome-item-6">Планирую</label>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="form_answer__rowRadio">
+                              <h3 class="form_answer__title">3. Как часто вы посещаете рестораны «Тануки»?</h3>
+                              <div class="radio_row">
+                                <div class="radio-inline">
+                                  <input class="radio" id="awesome-item-7" name="radio2" type="radio" value="AwesomeItem1" checked="true">
+                                  <label class="radio__label" for="awesome-item-7">Несколько раз в неделю</label>
+                                </div>
+                                <div class="radio-inline">
+                                  <input class="radio" id="awesome-item-8" name="radio2" type="radio" value="AwesomeItem2">
+                                  <label class="radio__label" for="awesome-item-8">Раз в неделю</label>
+                                </div>
+                                <div class="radio-inline">
+                                  <input class="radio" id="awesome-item-9" name="radio2" type="radio" value="AwesomeItem3">
+                                  <label class="radio__label" for="awesome-item-9">Реже раза в неделю</label>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="form_answer_btn">
+                          <button class="btn_global">Продолжить</button>
+                        </li>
+                        <li class="start_list__item list_disabled">
+                          <div class="start_list__row">
+                            <div class="start_list__wrap">
+                              <svg class="icon icon-s-3 start_list__svg">
+                                <use xlink:href="static/img/svg/symbol/sprite.svg#s-3"></use>
+                              </svg>
+                            </div>
+                            <p class="start_list__info">Поделитесь результатами с друзьями в соц. сетях</p>
+                          </div>
+                        </li>
+                      </ul>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="main_fix answer_wrap tort">
+                  <div class="container">
+                    <form class="form_global">
+                      <ul class="start_list">
+                        <li class="start_list__item">
+                          <div class="start_list__row">
+                            <div class="start_list__wrap">
+                              <svg class="icon icon-s-1 start_list__svg">
+                                <use xlink:href="static/img/svg/symbol/sprite.svg#s-1"></use>
+                              </svg>
+                            </div>
+                            <p class="start_list__info">Укажите имя, телефон и почту</p>
+                          </div>
+                          <div class="form_answer">
+                            <div class="form_answer__row">
+                              <input class="form_answer__input" type="text" name="name" value="Ozzie"><span class="form_answer__label">Имя</span>
+                            </div>
+                            <div class="form_answer__row">
+                              <input class="form_answer__input" type="email" name="email" value="test@gmail.com"><span class="form_answer__label">Почта</span>
+                            </div>
+                            <div class="form_answer__row">
+                              <input class="form_answer__input" type="tel" name="phone" value="+7 905 834-71-45"><span class="form_answer__label">Телефон</span>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="form_answer_btn" hidden>
+                          <button class="btn_global">Продолжить</button>
+                        </li>
+                        <li class="start_list__item pt">
+                          <div class="start_list__row">
+                            <div class="start_list__wrap">
+                              <svg class="icon icon-s-2 start_list__svg">
+                                <use xlink:href="static/img/svg/symbol/sprite.svg#s-2"></use>
+                              </svg>
+                            </div>
+                            <p class="start_list__info">Ответьте на 3 простых вопроса</p>
+                          </div>
+                          <ul class="form_answer radio__container">
+                            <li class="form_answer__rowRadio">
+                              <h3 class="form_answer__title">1. Как часто вы заказываете доставку в  «Тануки»?</h3>
+                              <div class="radio_row">
+                                <div class="radio-inline">
+                                  <input class="radio" id="awesome-item-1" name="radio" type="radio" value="AwesomeItem1" checked="true">
+                                  <label class="radio__label" for="awesome-item-1">Несколько раз в неделю</label>
+                                </div>
+                                <div class="radio-inline">
+                                  <input class="radio" id="awesome-item-2" name="radio" type="radio" value="AwesomeItem2">
+                                  <label class="radio__label" for="awesome-item-2">Раз в неделю</label>
+                                </div>
+                                <div class="radio-inline">
+                                  <input class="radio" id="awesome-item-3" name="radio" type="radio" value="AwesomeItem3">
+                                  <label class="radio__label" for="awesome-item-3">Реже раза в неделю</label>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="form_answer__rowRadio">
+                              <h3 class="form_answer__title">2. Пробовали ли вы новое сезонное меню ?</h3>
+                              <div class="radio_row">
+                                <div class="radio-inline">
+                                  <input class="radio" id="awesome-item-4" name="radio1" type="radio" value="AwesomeItem1" checked="true">
+                                  <label class="radio__label" for="awesome-item-4">Да</label>
+                                </div>
+                                <div class="radio-inline">
+                                  <input class="radio" id="awesome-item-5" name="radio1" type="radio" value="AwesomeItem2">
+                                  <label class="radio__label" for="awesome-item-5">Нет</label>
+                                </div>
+                                <div class="radio-inline">
+                                  <input class="radio" id="awesome-item-6" name="radio1" type="radio" value="AwesomeItem3">
+                                  <label class="radio__label" for="awesome-item-6">Планирую</label>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="form_answer__rowRadio">
+                              <h3 class="form_answer__title">3. Как часто вы посещаете рестораны «Тануки»?</h3>
+                              <div class="radio_row">
+                                <div class="radio-inline">
+                                  <input class="radio" id="awesome-item-7" name="radio2" type="radio" value="AwesomeItem1" checked="true">
+                                  <label class="radio__label" for="awesome-item-7">Несколько раз в неделю</label>
+                                </div>
+                                <div class="radio-inline">
+                                  <input class="radio" id="awesome-item-8" name="radio2" type="radio" value="AwesomeItem2">
+                                  <label class="radio__label" for="awesome-item-8">Раз в неделю</label>
+                                </div>
+                                <div class="radio-inline">
+                                  <input class="radio" id="awesome-item-9" name="radio2" type="radio" value="AwesomeItem3">
+                                  <label class="radio__label" for="awesome-item-9">Реже раза в неделю</label>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="form_answer_btn" hidden>
+                          <button class="btn_global">Продолжить</button>
+                        </li>
+                        <li class="start_list__item pt">
+                          <div class="start_list__row">
+                            <div class="start_list__wrap">
+                              <svg class="icon icon-s-3 start_list__svg">
+                                <use xlink:href="static/img/svg/symbol/sprite.svg#s-3"></use>
+                              </svg>
+                            </div>
+                            <p class="start_list__info">Поделитесь результатами с друзьями в соц. сетях</p>
+                          </div>
+                          <div class="form_answer checkbox__container">
+                            <h5 class="form_answer__sub">
+                              Спасибо! Вы великолепны! Осталось еще чуть - чуть!
+                              Поделитесь результатами в соц. сетях<br>и получите гарантированные подарки!
+                            </h5>
+                            <ul class="answer_social">
+                              <li class="answer_social__item">
+                                <input class="checkbox" id="social-1" name="soc" type="checkbox" value="vk">
+                                <label class="checkbox__label" for="social-1">Vkontakte</label>
+                              </li>
+                              <li class="answer_social__item">
+                                <input class="checkbox" id="social-2" name="soc" type="checkbox" value="fb">
+                                <label class="checkbox__label" for="social-2">Facebook</label>
+                              </li>
+                              <li class="answer_social__item">
+                                <input class="checkbox" id="social-3" name="soc" type="checkbox" value="wp">
+                                <label class="checkbox__label" for="social-3">Whatsapp</label>
+                              </li>
+                              <li class="answer_social__item">
+                                <input class="checkbox" id="social-4" name="soc" type="checkbox" value="tg">
+                                <label class="checkbox__label" for="social-4">Telegram</label>
+                              </li>
+                            </ul>
+                            <h5 class="form_answer__sub">Чем больше шеров, тем выше вероятность на лучший приз!</h5>
+                            <div class="social_check_hide" hidden>
+                              <div class="social_range"><span class="social_range__this">25%</span></div>
+                              <h5 class="form_answer__sub">
+                                Делитесь с друзьями во всех соц. сетях – это увеличивает
+                                ваши шансы выиграть больше призов!
+                              </h5>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="form_answer_btn pb_none">
+                          <button class="btn_global btn_disabled" disabled>Получить подарок</button>
+                        </li>
+                      </ul>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="main_fix answer_wrap tort">
+                  <div class="container">
+                    <form class="form_global">
+                      <ul class="start_list">
+                        <li class="start_list__item">
+                          <div class="start_list__row">
+                            <div class="start_list__wrap">
+                              <svg class="icon icon-s-1 start_list__svg">
+                                <use xlink:href="static/img/svg/symbol/sprite.svg#s-1"></use>
+                              </svg>
+                            </div>
+                            <p class="start_list__info">Укажите имя, телефон и почту</p>
+                          </div>
+                          <div class="form_answer">
+                            <div class="form_answer__row">
+                              <input class="form_answer__input" type="text" name="name" value="Ozzie"><span class="form_answer__label">Имя</span>
+                            </div>
+                            <div class="form_answer__row">
+                              <input class="form_answer__input" type="email" name="email" value="test@gmail.com"><span class="form_answer__label">Почта</span>
+                            </div>
+                            <div class="form_answer__row">
+                              <input class="form_answer__input" type="tel" name="phone" value="+7 905 834-71-45"><span class="form_answer__label">Телефон</span>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="form_answer_btn" hidden>
+                          <button class="btn_global">Продолжить</button>
+                        </li>
+                        <li class="start_list__item pt">
+                          <div class="start_list__row">
+                            <div class="start_list__wrap">
+                              <svg class="icon icon-s-2 start_list__svg">
+                                <use xlink:href="static/img/svg/symbol/sprite.svg#s-2"></use>
+                              </svg>
+                            </div>
+                            <p class="start_list__info">Ответьте на 3 простых вопроса</p>
+                          </div>
+                          <ul class="form_answer radio__container">
+                            <li class="form_answer__rowRadio">
+                              <h3 class="form_answer__title">1. Как часто вы заказываете доставку в  «Тануки»?</h3>
+                              <div class="radio_row">
+                                <div class="radio-inline">
+                                  <input class="radio" id="awesome-item-1" name="radio" type="radio" value="AwesomeItem1" checked="true">
+                                  <label class="radio__label" for="awesome-item-1">Несколько раз в неделю</label>
+                                </div>
+                                <div class="radio-inline">
+                                  <input class="radio" id="awesome-item-2" name="radio" type="radio" value="AwesomeItem2">
+                                  <label class="radio__label" for="awesome-item-2">Раз в неделю</label>
+                                </div>
+                                <div class="radio-inline">
+                                  <input class="radio" id="awesome-item-3" name="radio" type="radio" value="AwesomeItem3">
+                                  <label class="radio__label" for="awesome-item-3">Реже раза в неделю</label>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="form_answer__rowRadio">
+                              <h3 class="form_answer__title">2. Пробовали ли вы новое сезонное меню ?</h3>
+                              <div class="radio_row">
+                                <div class="radio-inline">
+                                  <input class="radio" id="awesome-item-4" name="radio1" type="radio" value="AwesomeItem1" checked="true">
+                                  <label class="radio__label" for="awesome-item-4">Да</label>
+                                </div>
+                                <div class="radio-inline">
+                                  <input class="radio" id="awesome-item-5" name="radio1" type="radio" value="AwesomeItem2">
+                                  <label class="radio__label" for="awesome-item-5">Нет</label>
+                                </div>
+                                <div class="radio-inline">
+                                  <input class="radio" id="awesome-item-6" name="radio1" type="radio" value="AwesomeItem3">
+                                  <label class="radio__label" for="awesome-item-6">Планирую</label>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="form_answer__rowRadio">
+                              <h3 class="form_answer__title">3. Как часто вы посещаете рестораны «Тануки»?</h3>
+                              <div class="radio_row">
+                                <div class="radio-inline">
+                                  <input class="radio" id="awesome-item-7" name="radio2" type="radio" value="AwesomeItem1" checked="true">
+                                  <label class="radio__label" for="awesome-item-7">Несколько раз в неделю</label>
+                                </div>
+                                <div class="radio-inline">
+                                  <input class="radio" id="awesome-item-8" name="radio2" type="radio" value="AwesomeItem2">
+                                  <label class="radio__label" for="awesome-item-8">Раз в неделю</label>
+                                </div>
+                                <div class="radio-inline">
+                                  <input class="radio" id="awesome-item-9" name="radio2" type="radio" value="AwesomeItem3">
+                                  <label class="radio__label" for="awesome-item-9">Реже раза в неделю</label>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="form_answer_btn" hidden>
+                          <button class="btn_global">Продолжить</button>
+                        </li>
+                        <li class="start_list__item pt">
+                          <div class="start_list__row">
+                            <div class="start_list__wrap">
+                              <svg class="icon icon-s-3 start_list__svg">
+                                <use xlink:href="static/img/svg/symbol/sprite.svg#s-3"></use>
+                              </svg>
+                            </div>
+                            <p class="start_list__info">Поделитесь результатами с друзьями в соц. сетях</p>
+                          </div>
+                          <div class="form_answer checkbox__container">
+                            <h5 class="form_answer__sub">
+                              Спасибо! Вы великолепны! Осталось еще чуть - чуть!
+                              Поделитесь результатами в соц. сетях<br>и получите гарантированные подарки!
+                            </h5>
+                            <ul class="answer_social">
+                              <li class="answer_social__item">
+                                <input class="checkbox" id="social-1" name="soc" type="checkbox" value="vk" checked="true">
+                                <label class="checkbox__label" for="social-1">Vkontakte</label>
+                              </li>
+                              <li class="answer_social__item">
+                                <input class="checkbox" id="social-2" name="soc" type="checkbox" value="fb">
+                                <label class="checkbox__label" for="social-2">Facebook</label>
+                              </li>
+                              <li class="answer_social__item">
+                                <input class="checkbox" id="social-3" name="soc" type="checkbox" value="wp">
+                                <label class="checkbox__label" for="social-3">Whatsapp</label>
+                              </li>
+                              <li class="answer_social__item">
+                                <input class="checkbox" id="social-4" name="soc" type="checkbox" value="tg">
+                                <label class="checkbox__label" for="social-4">Telegram</label>
+                              </li>
+                            </ul>
+                            <h5 class="form_answer__sub" hidden>Чем больше шеров, тем выше вероятность на лучший приз!</h5>
+                            <div class="social_check_hide">
+                              <div class="social_range"><span class="social_range__this">25%</span></div>
+                              <h5 class="form_answer__sub">
+                                Делитесь с друзьями во всех соц. сетях – это увеличивает
+                                ваши шансы выиграть больше призов!
+                              </h5>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="form_answer_btn pb_none">
+                          <button class="btn_global">Получить подарок</button>
+                        </li>
+                      </ul>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+      <footer>
+        <div class="container">
+          <div class="footer">
+            <ul class="footer_social">
+              <li class="footer_social__item"><a class="footer_social__link" href="#">
+                  <svg class="icon icon-icon-social-fb footer_social__icon">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#icon-social-fb"></use>
+                  </svg></a></li>
+              <li class="footer_social__item"><a class="footer_social__link" href="#">
+                  <svg class="icon icon-icon-social-instagram footer_social__icon">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#icon-social-instagram"></use>
+                  </svg></a></li>
+              <li class="footer_social__item"><a class="footer_social__link" href="#">
+                  <svg class="icon icon-icon-social-vk footer_social__icon">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#icon-social-vk"></use>
+                  </svg></a></li>
+            </ul>
+            <div class="footer_rules"><a class="footer_rules__link" href="#">Правила участия</a></div>
+          </div>
+        </div>
+      </footer>
     </div>
     <script src="static/js/libs.min.js"></script>
     <script src="static/js/main.js"></script>
